@@ -6,8 +6,8 @@ void setup() {
 void draw() {  
   // r = row
   // c = column
-  for(int c = 25; c >= -2; c--) {
-    for (int r = 25  ; r >= -2; r--) {
+  for(int c = 25; c >= -5; c--) {
+    for (int r = 25  ; r >= -5; r--) {
       scale(25 * r, 25 * c);
     }
   }
@@ -19,5 +19,5 @@ void scale(int x, int y) {
   fill(fillColor);
   strokeWeight(0);
   
-  bezier(x, y,  x + 50, y + 25, x + 50, y + 50,  x, y + 75);
+  bezier(x, y,  x + 100, y + 25, x + 50, y + 50,  x, y + 100);
 }
