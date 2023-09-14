@@ -17,7 +17,7 @@ void scale(int x, int y) {
   color fillColor = color((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
   
   fill(fillColor);
-  strokeWeight(0);
-  
+  noStroke();
+
   bezier(x, y,  x + 50, y + 25, x + 50, y + 50,  x, y + 75);
 }
